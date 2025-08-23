@@ -16,7 +16,7 @@ function App() {
       <Contact />
       
       <footer className="footer">
-        <p>© 2025 Fellah Faizel. Made with ❤️ and React.</p>
+        <p>© 2025 Fellah Faizel. Made with ❤️</p>
       </footer>
     </div>
   );
