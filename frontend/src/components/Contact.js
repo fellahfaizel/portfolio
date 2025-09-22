@@ -36,7 +36,7 @@ const Contact = () => {
         throw new Error(`Failed to send message: ${response.status} ${response.statusText}`);
       }
 
-      const result = await response.json();
+      //const result = await response.json();
       
       // Success response
       setSubmitMessage('Thank you for your message! I\'ll get back to you soon.');
@@ -211,5 +211,6 @@ const Contact = () => {
     </section>
   );
 };
+
 
 export default Contact;
