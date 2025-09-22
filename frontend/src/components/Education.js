@@ -10,7 +10,7 @@ const Education = () => {
   useEffect(() => {
     const fetchEducation = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/education');
+        const response = await fetch('https://fellah-backend.onrender.com/api/education');
         if (!response.ok) {
           throw new Error('Failed to fetch education data');
         }

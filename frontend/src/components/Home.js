@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/profile');
+        const response = await fetch('https://fellah-backend.onrender.com/api/profile');
         if (!response.ok) {
           throw new Error('Failed to fetch profile data');
         }
