@@ -3,13 +3,16 @@ package main
 import (
 	"portfolio/routes"
 
+	"os"
 	"time"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	_ = godotenv.Load()
 	r := gin.Default()
 
 	// ✅ Serve static files (profile.jpg inside ./static folder)
@@ -32,6 +35,9 @@ func main() {
 	r.GET("/api/skills", routes.GetSkills)
 	r.GET("/api/education", routes.GetEducation)
 
-	// ✅ Run backend server
-	r.Run(":8080")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080" // local default
+	}
+	r.Run(":" + port)
 }
