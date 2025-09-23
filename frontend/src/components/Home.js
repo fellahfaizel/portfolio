@@ -50,7 +50,7 @@ const Home = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
     link.href = '/FellahFaizel.pdf';
-    link.download = 'FellahFaizel_resume.pdf';
+    link.download = 'FellahFaizel.pdf';
     link.click();
   };
 
@@ -150,5 +150,6 @@ const Home = () => {
     </section>
   );
 };
+
 
 export default Home;
