@@ -186,6 +186,14 @@ const Home = () => {
           width: 100%;
         }
 
+        /* Bio styling improvements */
+        .home-content-mobile .home-bio p {
+          font-size: 1.2rem;
+          line-height: 1.8;
+          text-align: justify;
+          margin-bottom: 2rem;
+        }
+
         /* Ensure proper mobile styling */
         @media (max-width: 1024px) {
           .home-content-mobile .home-text {
@@ -201,6 +209,9 @@ const Home = () => {
           }
 
           .home-content-mobile .home-bio p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
             margin-bottom: 2rem;
             max-width: none;
           }
@@ -237,6 +248,12 @@ const Home = () => {
           .home-content-mobile .home-text,
           .home-content-mobile .home-bio {
             text-align: left;
+          }
+
+          .home-content-mobile .home-bio p {
+            text-align: justify;
+            font-size: 1.2rem;
+            line-height: 1.8;
           }
 
           .home-content-mobile .home-buttons {
