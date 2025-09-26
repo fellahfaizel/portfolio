@@ -188,10 +188,11 @@ const Home = () => {
 
         /* Bio styling improvements */
         .home-content-mobile .home-bio p {
-          font-size: 1.2rem;
+          font-size: 1.4rem;
           line-height: 1.8;
           text-align: justify;
           margin-bottom: 2rem;
+          color: var(--text-light);
         }
 
         /* Ensure proper mobile styling */
@@ -209,11 +210,12 @@ const Home = () => {
           }
 
           .home-content-mobile .home-bio p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             line-height: 1.8;
             text-align: justify;
             margin-bottom: 2rem;
             max-width: none;
+            color: var(--text-light);
           }
         }
 
@@ -252,8 +254,9 @@ const Home = () => {
 
           .home-content-mobile .home-bio p {
             text-align: justify;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             line-height: 1.8;
+            color: var(--text-light);
           }
 
           .home-content-mobile .home-buttons {
